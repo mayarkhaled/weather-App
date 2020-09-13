@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<body>
+    <div id = "main">
+    <label id = "cityLabel" >Welcome to weather</label>
+
+    <input placeholder="Enter your city" id="cityInput" style="left: 40% ; position: fixed;"></input>
+    <button id="searchButton" style="left: 53% ; position: fixed;">Search</button>
+    
+    <div id ="weatherContent">
+        <label  style="font-style: italic ; font-size: x-large; left: 50% ; position: fixed;" id ="status">Clear sky</label>
+        <br>
+        <label  style="font-style: italic ; font-size: x-large;" for="temp">Temp : </label>
+        <label style=" font-size: x-large;" id = "temp">16 </label>
+        <br>
+       
+        <label style="font-style: italic ;font-size: x-large;" for="wind">Wind : </label>
+        <label style=" font-size: x-large;" id = "wind">55 </label>
+        <br>
+        
+        <label style="font-style: italic ;font-size: x-large;" for="pressure">Pressure : </label>
+        <label  style=" font-size: x-large;" id = "pressure">66 </label>
+
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+<style>
+    #weatherContent{
+        background-color: teal;
+        display: block;
+        border: 1px solid black;
+        width: 10cm;
+        height: 3cm;
+        padding: 20px;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+
+        margin: -70px 0 0 -170px;
+    }
+    
+    #cityLabel{
+        text-align: center;
+        display: block;
+        font: bold;
+        font-size: 3em;
+        padding: 1em;
+    }
+    body{
+        background-image: url("weather.jpg");
+    }
+</style>
